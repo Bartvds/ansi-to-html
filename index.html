@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <title>ansi-to-html</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .codearea {
+            font-family: monospace;
+            font-size: 12px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .codebox {
+            height: 600px;
+            resize: none;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .codeleft {
+            width: 30%;
+            max-width: 30%;
+            min-width: 30%;
+        }
+        .coderight {
+            width: 70%;
+            max-width: 70%;
+            min-width: 70%;
+        }
+
+        #stage {
+            position: relative;
+        }
+        #input {
+            position: absolute;
+        }
+
+        #output {
+            position: absolute;
+            right: 0px;
+        }
+        #view {
+            font-family: 'Droid Sans Mono', monospace;
+            font-size: 12px;
+            display: none;
+            padding: 10px;
+            position: absolute;
+            right: 0px;
+            white-space: pre;
+            background-color: black;
+            color: grey;
+        }
+    </style>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+</head>
+<body>
+<p><b>Convert ansi escaped text streams to html</b></p>
+
+<p>source: <a href="https://github.com/Bartvds/ansi-to-html-online">github.com/bartvds/ansi-to-html-online</a></p>
+
+<button id="executeElem">update</button>
+<button id="toggleElem">toggle</button>
+<div id="stage">
+    <textarea id="input" class="codeleft codearea codebox"></textarea>
+    <textarea id="output" class="coderight codearea codebox"></textarea>
+    <div id="view" class="coderight codearea"></div>
+</div>
+<script src="bundle.js"></script>
+</body>
+</html>

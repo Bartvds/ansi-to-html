@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "ansi-to-html-online",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Bartvds/ansi-to-html-online",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bartvds/ansi-to-html-online.git"
+  },
+  "author": {
+    "name": "Bart van der Schoor",
+    "url": "https://github.com/Bartvds"
+  },
+  "bugs": {
+    "url": "https://github.com/Bartvds/ansi-to-html-online/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/Bartvds/ansi-to-html-online/master/LICENSE-MIT"
+  },
+  "scripts": {
+    "build": "browserify index.js > bundle.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ansi_up": "^1.1.1",
+    "browserify": "^4.1.8"
+  }
+}
